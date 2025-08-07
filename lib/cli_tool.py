@@ -8,7 +8,7 @@ users = {}
 
 # TODO: Implement function to add a task for a user
 def add_task(args):
-    users(args.user) = users.get(args.user, User(args.user))
+    users[args.user] = users.get(args.user, User(args.user))
     user = users[args.user]
     task = Task(args.title)
     user.add_task(task)
